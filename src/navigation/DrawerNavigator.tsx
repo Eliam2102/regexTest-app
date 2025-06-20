@@ -12,14 +12,18 @@ export default function DrawerNavigation() {
             initialRouteName="index"
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: '#345809',
+                    backgroundColor: '#BDE0FE',
                 },
-                headerTintColor: '#9849ff',
+                headerTintColor: '#333333',
                 drawerStyle: {
-                    backgroundColor: '#890243',
+                    backgroundColor: '#FFFFFF', 
                 },
-                drawerActiveTintColor: '#539023',
-                drawerInactiveTintColor: '#3499ff',
+                drawerActiveTintColor: '#0077B6',
+                drawerInactiveTintColor: '#8E8E8E',
+                drawerLabelStyle: {
+                    fontWeight: 'bold',
+                    fontSize: 16,
+                },
             }}
         >
             <Drawer.Screen
@@ -35,7 +39,7 @@ export default function DrawerNavigation() {
             <Drawer.Screen
                 name="record"
                 component={RecordScreen}
-                options={{ title: 'Record' }}
+                options={{ title: 'Historial' }}
             />
         </Drawer.Navigator>
     );
